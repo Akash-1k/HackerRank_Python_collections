@@ -54,8 +54,6 @@ from collections import Counter
 
 if __name__ == '__main__':
     s = sorted(input().strip())
-    # Counter --> counts total no of occurrence of each character
-    # most_common() --> character with max occurrence in desc order
     logo = Counter(s).most_common(3)
     for character, count in logo:
         print(character, count)
